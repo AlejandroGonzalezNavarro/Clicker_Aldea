@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clicker</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body style="background-color:#2f353c" onload="Deglucion(),Actualizar_Coste(),Actualizar_produccionM(),Actualizar_produccionP(),Actualizar_produccionC()">
+<div class="container">
+  <div id="recoleccion" class="Campo">
+    <table>
+      <tr>
+        <td><button id="clickM" type="button">Recolectar</button></td>
+        <td><span>Madera: <span id="totalM">0</span></span></td>
+        <td><span id="ProduccionM"></span></td>
+      </tr>
+      <tr>
+        <td><button id="clickP" type="button">Recolectar</button></td>
+        <td><span>Piedra: <span id="totalP">0</span></span></td>
+        <td><span id="ProduccionP"></span></td>
+      </tr>
+      <tr>
+        <td><button id="clickC" type="button">Recolectar</button></td>
+        <td><span>Comida: <span id="totalC">0</span></span></td>
+        <td><span id="ProduccionC"></span></td>
+      </tr>
+      <tr>
+        <td><button id="Mejorar_recoleccion" type="button">Mejorar la recoleccion</button></td>
+        <td colspan="2"><span>-<span id="click_incrp">3</span> de Piedra -<span id="click_incrm">3</span> de Madera</span><span id="SinRecoleccion" class="Sin"></span></td>
+      </tr>
+    </table>
+  </div>
+  <div id="Edificios" class="Campo">
+    <table>
+      <tr>
+        <td><button id="clickA" type="button">Generar</button></td>
+        <td><span>Aldeanos: <span id="totalA">0</span><span> -20 de comida</span><span id="SinAldeano" class="Sin"></span></span></td>
+      </tr>
+      <tr>
+        <td><button id="clickC1" type="button">Construir</button></td>
+        <td><span>Choza: <span id="totalC1">0</span><span> -20 de Madera</span><span id="SinChoza" class="Sin"></span></span></td>
+      </tr>
+    </table>
+  </div>
+  <div id="Trabajadores" class="Campo">
+    <table>
+      <tr>
+        <td colspan="2"><span>Aldeanos sin trabajo: <span id="WorkNo">0</span></span></td>
+      </tr>
+      <tr>
+        <td><button id="clickworkM" type="button">Entrenar</button></td>
+        <td><span>Leñador: <span id="WorkM">0</span><span id="SinWorkM" class="Sin"></span></span></td>
+      </tr>
+      <tr>
+        <td><button id="clickworkP" type="button">Entrenar</button></td>
+        <td><span>Minero: <span id="WorkP">0</span><span id="SinWorkP" class="Sin"></span></span></td>
+      </tr>
+      <tr>
+        <td><button id="clickworkC" type="button">Entrenar</button></td>
+        <td><span>Granjeros: <span id="WorkC">0</span><span id="SinWorkC" class="Sin"></span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<script type="text/javascript" src="click.js"></script>
+</body>
+</html>
