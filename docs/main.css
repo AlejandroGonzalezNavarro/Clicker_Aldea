@@ -1,0 +1,33 @@
+.container {
+    margin-top:45.5px;
+}
+/* Colores
+-gris-
+#2f353c
+#D3D3D3
+-morado-
+#4a3861
+*/
+.Campo {
+    border: solid #2d0283 5px;
+    border-radius: 12px;
+    background-color: #4a3861;
+    color: #D3D3D3;
+    margin: 20px;
+}
+
+.Campo td {
+    padding: 3px;
+}
+.Campo img {
+    position: relative;
+    top: 8px;
+    margin: 0px;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+}
+.Sin {
+    opacity: 1;
+    color:red;
+}
